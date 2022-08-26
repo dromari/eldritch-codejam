@@ -1,2 +1,2 @@
 # eldritch-codejam
-# https://github.com/dromari/eldritch-codejam/
+# https://dromari.github.io/eldritch-codejam/
