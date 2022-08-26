@@ -1,0 +1,231 @@
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 480px;
+    min-height: 95vh;
+    background-blend-mode: multiply;
+    background: url(./assets/obzor-igry.jpg) center, rgba(0, 0, 0, 0.6);
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 20px 50px 20px;
+    flex-wrap: wrap;
+}
+
+.wrapper_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.choice_of_ancient {
+    display: flex;
+    width: max-content;
+    gap: 100px;
+    margin-bottom: 30px;
+}
+
+.button_ancient {
+    width: 10em;
+    height: 15em;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-size: contain;
+    box-shadow: 0px 0px 15px 10px #fff;
+    color: rgba(0, 0, 0, 0.0);
+}
+
+.button_ancient:hover {
+    font-size: 20px;
+    box-shadow: 0px 0px 15px 10px #0df5e9;
+    transition: all 0.5s;
+}
+
+.button_ancient:focus {
+    box-shadow: 0px 0px 15px 10px rgb(87, 245, 13);
+}
+
+.button_Azathoth {
+    background-image: url(./assets/Ancients/Azathoth.png);
+}
+
+.button_Cthulthu {
+    background-image: url(./assets/Ancients/Cthulthu.png);
+}
+
+.button_IogSothoth {
+    background-image: url(./assets/Ancients/IogSothoth.png);
+}
+
+.button_ShubNiggurath {
+    background-image: url(./assets/Ancients/ShubNiggurath.png);
+}
+
+.difficulty_selection {
+    display: flex;
+    gap: 50px;
+}
+
+.button_difficulty {
+    width: 10em;
+    height: 3em;
+    background: #e5b380f7;
+    box-shadow: 0px 0px 15px 10px #fff;
+    border-radius: 10px;
+    color: #000;
+    font-size: 16px;
+    line-height: 21px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.button_difficulty:hover {
+    background: #f7a24ef7;
+    font-size: 20px;
+    box-shadow: 0px 0px 15px 10px #0df5e9;
+}
+
+.button_difficulty:focus {
+    background: #f7a24ef7;
+    box-shadow: 0px 0px 15px 10px rgb(87, 245, 13);
+}
+
+.create_deck {
+    display: flex;
+    justify-content: center;
+}
+
+.button_create_deck_cards {
+    width: 200px;
+    height: 278px;
+    background: #3ef99a;
+    box-shadow: 0px 0px 15px 10px #fff;
+    border-radius: 30px;
+    color: #000;
+    font-size: 25px;
+    line-height: 21px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.button_create_deck_cards:hover {
+    background: #9cfd1b;
+    font-size: 30px;
+    box-shadow: 0px 0px 15px 10px #0df5e9;
+}
+
+.button_create_deck_cards:active {
+    background: #9cfd1b;
+    box-shadow: 0px 0px 15px 10px rgb(87, 245, 13);
+}
+
+.deck_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.deck_state_display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+    margin-left: 100px;
+    background-color: rgba(248, 195, 134, 0.692);
+    border-radius: 30px;
+    width: 419px;
+    height: 419px;
+    box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, 0.507);
+}
+
+.stage_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 10px 0;
+}
+
+.stage_text {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+
+.dot {
+    width: 60px;
+    height: 60px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    background-color: #fff;
+}
+
+.green {
+    background-color: #9cfd1b;
+}
+
+.brown {
+    background-color: #fa8b30;
+}
+
+.blue {
+    background-color: #8596f8;
+}
+
+.dots_container {
+    display: flex;
+    gap: 40px;
+}
+
+
+.current_card {
+    width: 285px;
+    height: 419px;
+    background-color: rgba(255, 255, 255, 0.329);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 10px #fff;
+}
+
+.button_deck {
+    width: 285px;
+    height: 419px;
+    background-image: url(./assets/mythicCardBackground.png);
+    margin-right: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px 10px #fff;
+    border: none;
+    outline: none;
+}
+
+.button_deck:hover {
+    box-shadow: 0px 0px 15px 10px #0df5e9;
+}
+
+.button_deck:active {
+    box-shadow: 0px 0px 15px 10px rgb(87, 245, 13);
+}
